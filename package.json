@@ -3,7 +3,11 @@
   "version": "1.0.0",
   "description": "Practice project.",
   "private": "true",
-  "scripts": {},
+  "scripts": {
+    "start": "webpack serve --mode development --open",
+    "build": "webpack --mode production",
+    "format": "prettier --write ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/K0R0BKIN/odin-todo.git"
