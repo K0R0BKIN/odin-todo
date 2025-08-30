@@ -5,7 +5,12 @@ module.exports = {
   mode: "development",
   entry: "./src/index.js",
   devtool: "eval-cheap-source-map",
-  plugins: [new HtmlWebpackPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./src/index.html",
+      title: "Odin Todo",
+    }),
+  ],
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
